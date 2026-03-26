@@ -1,0 +1,7 @@
+KEYS=[
+    "AIzaSyAwlTSNF5NpQJRvHoFU4Vg6kD0Yt7WMyF0",
+    "AIzaSyA748YLPHSxdH8XLyfr2RFE72XLfGbtNR8",
+    "AIzaSyDRYuEtY0R_IZphBDlQsS5OoU2_A0VABRQ",
+    "AIzaSyCYusvfndm_8VX8WaHUM7sHIKnqdfpmpcI",
+    "AIzaSyA8n9sXo2l3m1e7Zt5v6g9Xy4R0Qj8kL5w",
+]
