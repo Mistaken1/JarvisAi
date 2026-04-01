@@ -4,6 +4,7 @@ from google.genai import errors
 from voice import speak
 from declarations import FUNCTIONS, tools
 from API_KEYS import KEYS
+import Override
 
 # ── Client setup with key rotation ──
 current_key_index = 0
@@ -115,7 +116,7 @@ def process_response(response) -> bool:
             speak(part.text)
 
     return had_function_call
-password = "ujingski123124"
+    
 # ── Main loop ──
 while True:
     try:
@@ -125,6 +126,9 @@ while True:
         if user_input.lower() in ("exit", "quit"):
             speak("Signing off.")
             break
+
+        elif user_input.lower() in Override.functions.keys():
+            Override.functions[user_input.lower()]()
 
         response = send_with_retry(user_input)
         process_response(response)
